@@ -7,13 +7,13 @@ This is a Heroku buildpack for adding Google's Noto fonts.
 Create a new Heroku application using this buildpack - 
 
 ```
-$ heroku create --buildpack https://github.com/emailthis/heroku-buildpack-noto-fonts.git
+$ heroku create --buildpack https://github.com/TanookiLabs/heroku-buildpack-noto-fonts.git
 ```
 
 Add this to an existing application - 
 
 ```
-$ heroku buildpacks:set BUILDPACK_URL="https://github.com/emailthis/heroku-buildpack-noto-fonts.git"
+$ heroku buildpacks:set BUILDPACK_URL="https://github.com/TanookiLabs/heroku-buildpack-noto-fonts.git"
 ```
 
 
