@@ -58,11 +58,11 @@ cp $CACHE_DIR/noto-fonts/* $BUILD_DIR/.fonts/
 cp $CACHE_DIR/noto-cjk-fonts/* $BUILD_DIR/.fonts/
 
 print "Removing unneeded fonts to keep slug size down"
-for f in $(find $BUILD_DIR/.fonts -name '*.ttf' -o -name '*.otf'); do 
-  if [[ $f =~ Thai|Sinhala|Arabic ]]; then 
+for f in $(find $BUILD_DIR/.fonts -name '*.ttf' -o -name '*.otf'); do
+  if [[ $f =~ Thai|Sinhala|Arabic|Devanagari|Hindi ]]; then
     print "keeping $f"
   else
     print "deleting $f";
-    rm $f; 
-  fi 
+    rm $f;
+  fi
 done
